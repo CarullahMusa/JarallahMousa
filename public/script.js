@@ -21,7 +21,7 @@
 
 // ﻿let div = document.querySelector('#content');
 // div.classList.contains('warning');  
-const div = document.querySelector('#navbar-default');
+const div = document.querySelector('#navbar-sticky');
 const btnn = document.querySelector('#btn');
 btnn.addEventListener("click", function () {
     if (div.classList.contains('hidden')) {
