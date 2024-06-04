@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class=" scroll-smooth">
+<html lang="en" class=" scroll-smooth scroll-m-11">
 
 <head>
     <meta charset="UTF-8">
@@ -19,16 +19,16 @@
     <!-- End -->
 </head>
 
-<body class="bg-green-200">
+<body class="bg-green-200 selection:text-green-200 selection:bg-green-500">
     <nav
-        class="bg-green-200 md:sticky backdrop-blur-0 md:backdrop-blur-md md:bg-opacity-25 z-[99] w-11/12 mt-5 px-3 top-0 border-2 mx-auto border-green-300 -translate-x-0 rounded-full">
+        class="bg-green-200 sticky backdrop-blur-md bg-opacity-25 z-[99] w-11/12 mt-7 px-3 top-0 border-2 mx-auto border-green-300 -translate-x-0 rounded-full">
         <div class=" max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <a href="#" class="">
+            <a href="#" class="select-none">
                 <img src="images/wordmark-logo.png" class="h-16" alt="CARO Logo" />
                 <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">CARO</span> -->
             </a>
             <button data-collapse-toggle="navbar-sticky" id="btn" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-green-500 rounded-lg md:hidden hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-green-300"
                 aria-controls="navbar-sticky" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -39,7 +39,7 @@
             </button>
             <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                 <ul
-                    class="flex flex-col md:text-xl p-4 md:p-0 font-medium border font-Poppins border-green-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    class="flex flex-col md:text-xl p-4 md:p-0 font-medium font-Poppins items-center rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                     <li>
                         <a href="#"
                             class="block py-2 px-3 text-white bg-green-700 rounded md:bg-transparent md:text-green-600 md:p-0 md:dark:text-green-500"
@@ -113,7 +113,9 @@
                 </a>
             </div>
         </div>
-        <div id="Skills" class="mt-32 md:mt-0">
+
+        <!-- skills start -->
+        <div id="Skills" class="mt-20 md:mt-0">
             <h1 class="text-center text-green-950 text-2xl md:text-7xl">SKILLS</h1>
             <div class="mt-14 grid gap-3 md:grid-cols-3 md:gap-9">
                 <!-- first card -->
@@ -202,83 +204,88 @@
                 <!-- card end -->
             </div>
         </div>
+        <!-- skills end -->
 
         <!-- contact form -->
-        <div id="Contact">
+        <div class="">
+            <h1 class="text-center m-3 text-5xl">Contact Form</h1>
             <br />
-            <divclass="formbold-builder-form themeThree">
+            <div class="select-none" id="Contact">
                 <form enctype="multipart/form-data" action="https://formbold.com/s/oW8Yb" method="POST"
-                    class="mx-auto w-full font-Poppins max-w-[570px] rounded-[10px] border shadow-lg border-green-300 bg-green-200 p-10 themeThree">
-                    <div class="SortableItem mb-2 fb-builder-item">
+                    class="mx-auto w-full font-Poppins max-w-[570px] rounded-[10px] border shadow-lg border-green-300 bg-green-200 p-10 ">
+                    <div class=" mb-2 fb-builder-item">
                         <h3 class="static !font-bold text-xl font-semibold leading-tight text-green-950 sm:text-[28px]">
                             Contact Us
                         </h3>
                     </div>
-                    <div class="SortableItem fb-builder-item">
+                    <div class=" fb-builder-item">
                         <p class="static font-normal mb-4 text-sm text-green-900">
                             If you want help or consultation on a subject, enter your information.
                         </p>
                     </div>
-                    <div class="SortableItem fb-builder-item">
+                    <div class=" fb-builder-item">
                         <div class="mb-4">
                             <label class="mb-2.5 block text-base text-green-950"><span>Full Name</span><span
-                                    class="label-required pl-1 text-red-400">*</span></label><input type="text"
+                                    class=" pl-1 text-red-400">*</span></label><input type="text"
                                 class="w-full rounded border border-green-300 bg-green-100 px-5 py-3 text-base text-green-900 outline-none focus:border-green-600"
                                 name="text_input_95BBF4A6-F917-4D80-9C0D-46C6ED496A5E" placeholder="Enter your Name"
                                 required="" value="" />
                         </div>
                     </div>
-                    <div class="SortableItem fb-builder-item">
+                    <div class=" fb-builder-item">
                         <div class="mb-4">
                             <label class="mb-2.5 block text-base text-green-950"><span>E-Mail</span><span
-                                    class="label-required pl-1 text-red-400">*</span></label><input type="email"
+                                    class=" pl-1 text-red-400">*</span></label><input type="email"
                                 class="w-full rounded border border-green-300 bg-green-100 px-5 py-3 text-base text-green-900 outline-none focus:border-green-600"
                                 name="email_input_416C76C9-37D0-4DB2-9690-D6B3D03A0397"
                                 placeholder="Enter Email Address" required="" value="" />
                         </div>
                     </div>
-                    <div class="SortableItem fb-builder-item">
+                    <div class=" fb-builder-item">
                         <div class="mb-4">
                             <label class="mb-2.5 block text-base text-green-950"><span>Message</span><span
-                                    class="label-required pl-1 text-red-400">*</span></label><textarea
+                                    class=" pl-1 text-red-400">*</span></label><textarea
                                 class="w-full rounded border border-green-300 bg-green-100 px-5 py-3 text-base text-green-900 outline-none focus:border-green-600"
                                 name="text_area_C8A4A8D5-CB80-4174-93D2-D683DDDA3892" placeholder="Enter your Message"
                                 required=""></textarea>
                         </div>
                     </div>
-                    <div class="btn-toolbar flex items-center space-x-3">
+                    <div class=" flex items-center space-x-3">
                         <input type="submit"
-                            class="inline-flex cursor-pointer items-center justify-center rounded border border-green-300 bg-green-100 px-8 py-2 text-base font-medium text-green-950 hover:bg-opacity-90"
+                            class="inline-flex cursor-pointer items-center justify-center rounded border border-green-300 bg-green-100 px-8 py-2 text-base font-medium text-green-950 hover:border-green-500 hover:bg-opacity-90"
                             value="Submit" />
                     </div>
                 </form>
-                <p class="mt-8 mb-7 flex items-center justify-center">
-                    Powered by<span class="pl-2"><a href="https://formbold.com" rel="nofollow noopener"
-                            target="_blank"><img src="https://cdn.formbold.com/formbold-logo.svg" alt="Formbold Logo"
-                                style="max-width: 100px;" /></a></span>
+                <p class="mt-8 mb-14 flex items-center justify-center">
+                    Powered by<span class="pl-2">
+                        <img src="https://cdn.formbold.com/formbold-logo.svg" alt="Formbold Logo"
+                            style="max-width: 100px;" /></span>
                 </p>
+            </div>
         </div>
+        <!-- contact end -->
     </div>
-    <!-- contact end -->
 
     <!-- footer start -->
-    <footer id="Footer" class="bg-gray-100">
+    <footer id="Footer" class="bg-gray-100 font-Poppins">
         <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-            <div class="flex justify-center text-teal-600">
-                <img class="w-1/4" src="images/vertical-logo.png" alt="">
+            <div class="flex justify-center text-teal-600 select-none">
+                <img class="w-2/4 sm:w-2/6" src="images/vertical-logo.png" alt="">
             </div>
             <div class="mt-12 border-t border-gray-100 pt-6">
-                <div class="text-center sm:flex justify-center sm:text-left">
+                <div class="text-center sm:flex justify-center sm:text-left select-none">
                     <p class="text-sm text-gray-500">
-                        <span class="block sm:inline"> All rights reserved.</span>
+                        <span class="block sm:inline mb-3 sm:mb-0"> All rights reserved.</span>
 
-                        <a class="inline-block text-teal-600 underline transition hover:text-teal-600/75" target="_blank" href="Terms_Conditions.html">
+                        <a class="inline-block text-green-600 underline transition hover:text-green-600/75"
+                            target="_blank" rel="noopener noreferrer" href="Terms_Conditions.html">
                             Terms & Conditions
                         </a>
 
                         <span>&middot;</span>
 
-                        <a class="inline-block text-teal-600 underline transition hover:text-teal-600/75" target="_blank" href="Privacy_Policy.html">
+                        <a class="inline-block text-green-600 underline transition hover:text-green-600/75"
+                            target="_blank" rel="noopener noreferrer" href="Privacy_Policy.html">
                             Privacy Policy
                         </a>
                     </p>
@@ -287,26 +294,34 @@
                 </div>
             </div>
 
-            <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
+            <ul class="mt-12 flex flex-wrap select-none justify-center gap-6 md:gap-8 lg:gap-12">
                 <li>
-                    <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Home </a>
+                    <a class="text-gray-700 group"><span
+                            class="relative pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-green-500 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+                            Home </span></a>
                 </li>
 
                 <li>
-                    <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> About </a>
+                    <a class="text-gray-700 group"><span
+                            class="relative pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-green-500 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+                            About </span></a>
                 </li>
 
                 <li>
-                    <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Skills </a>
+                    <a class="text-gray-700 group"><span
+                            class="relative pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-green-500 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+                            Skills </span></a>
                 </li>
 
                 <li>
-                    <a class="text-gray-700 transition hover:text-gray-700/75" href="#"> Contact </a>
+                    <a class="text-gray-700 group"><span
+                            class="relative pb-1 after:transition-transform after:duration-500 after:ease-out after:absolute after:bottom-0 after:left-0 after:block after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-green-500 after:content-[''] after:group-hover:origin-bottom-left after:group-hover:scale-x-100">
+                            Contact </span></a>
                 </li>
             </ul>
 
             <ul class="mt-12 flex justify-center gap-6 md:gap-8">
-                <li>
+                <!-- <li>
                     <a href="#" rel="noreferrer" target="_blank"
                         class="text-gray-700 transition hover:text-gray-700/75">
                         <span class="sr-only">Facebook</span>
@@ -316,11 +331,11 @@
                                 clip-rule="evenodd" />
                         </svg>
                     </a>
-                </li>
+                </li> -->
 
                 <li>
-                    <a href="#" rel="noreferrer" target="_blank"
-                        class="text-gray-700 transition hover:text-gray-700/75">
+                    <a href="https://www.instagram.com/carr.musa" rel="noreferrer noopener" target="_blank"
+                        class="text-gray-700 transition hover:text-green-700/75">
                         <span class="sr-only">Instagram</span>
                         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd"
@@ -331,8 +346,8 @@
                 </li>
 
                 <li>
-                    <a href="#" rel="noreferrer" target="_blank"
-                        class="text-gray-700 transition hover:text-gray-700/75">
+                    <a href="#" rel="noreferrer noopener" target=""
+                        class="text-gray-700 transition hover:text-green-700/75">
                         <span class="sr-only">Twitter</span>
                         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path
@@ -342,8 +357,8 @@
                 </li>
 
                 <li>
-                    <a href="#" rel="noreferrer" target="_blank"
-                        class="text-gray-700 transition hover:text-gray-700/75">
+                    <a href="https://github.com/CarullahMusa" rel="noreferrer noopener" target="_blank"
+                        class="text-gray-700 transition hover:text-green-700/75">
                         <span class="sr-only">GitHub</span>
                         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path fill-rule="evenodd"
@@ -356,7 +371,7 @@
         </div>
     </footer>
     <!-- footer end -->
-    
+
     <script src="script.js"></script>
 </body>
 

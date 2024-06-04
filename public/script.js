@@ -13,14 +13,6 @@
 
 //   initTWE({ Collapse, Ripple });
 
-//   let div = document.querySelector('#content');
-// div.classList.replace('info','block');
-
-// let div = document.querySelector('#content');
-// div.classList.toggle('visible');
-
-// ﻿let div = document.querySelector('#content');
-// div.classList.contains('warning');  
 const div = document.querySelector('#navbar-sticky');
 const btnn = document.querySelector('#btn');
 btnn.addEventListener("click", function () {
