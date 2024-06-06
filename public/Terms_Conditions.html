@@ -10,6 +10,11 @@
 
     <link rel="stylesheet" href="index.css">
 
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +24,102 @@
     <!-- End -->
 </head>
 <style>
-    body{
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
         background-color: #bbf7d0;
         color: #052e16;
+    }
+
+    @media (min-width: 600px) {
+        #container {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    #nav {
+        position: sticky;
+        z-index: 99;
+        width: 91.666667%;
+        margin-top: 1.3rem;
+        top: 0px;
+        border-radius: 9999px;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid;
+        border-width: thin;
+        border-color: rgb(134 239 172);
+        backdrop-filter: blur(11px);
+    }
+
+    #nav-div {
+        max-width: 1536px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem
+            /* 16px */
+        ;
+    }
+
+    @media (min-width: 600px) {
+        #nav-div {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    }
+
+    #nav-a {
+        user-select: none;
+    }
+
+    #nav-img {
+        height: 4rem
+            /* 64px */
+        ;
+    }
+
+    @media (min-width: 600px) {
+        #nav-ul {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+    }
+
+    #nav-ul {
+        list-style: none;
+        display: flex;
+
+    }
+
+    nav ul li {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        display: block;
+        font-size: 1rem;
+
+    }
+
+    nav ul li a {
+        color: #052e16;
+        font-weight: 500;
+    }
+
+    nav ul li a:hover {
+        color: rgb(34 197 94);
+    }
+
+    #i {
+        color: #14552d;
+        cursor: pointer;
+    }
+
+    #i:hover {
+        color: rgb(34 197 94);
     }
 
     li,
@@ -30,15 +128,32 @@
         font-weight: 400;
         font-style: normal;
     }
-    .container{
+
+    .container {
         margin-right: auto;
         margin-left: auto;
         width: 80%;
     }
 </style>
 
-<body>
-    <div class="container">
+<body id="Terms_Conditions">
+    <nav id="nav">
+        <div id="nav-div">
+            <a id="nav-a">
+                <img src="images/wordmark-logo.png" id="nav-img" alt="CARO Logo" />
+                <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">CARO</span> -->
+            </a>
+            <div id="ul-div">
+                <ul id="nav-ul">
+                    <li><a href="#Terms_Conditions" style="text-decoration:inherit;">Terms & Conditions</a></li>
+                    <li>
+                        <a href="index.html"><i class="fa-solid fa-right-from-bracket fa-lg" id="i"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="container">
         <h1>Terms and Conditions</h1>
         <p>Last updated: June 03, 2024</p>
         <p>Please read these terms and conditions carefully before using Our Service.</p>
@@ -232,8 +347,8 @@
         <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
         <ul>
             <li>By visiting this page on our website: <a href="https://carullahmusa.github.io/Web-site-caro/#Contact"
-                    rel="external nofollow noopener"
-                    target="_blank">carullahmusa.github.io/Web-site-caro/#Contact</a></li>
+                    rel="external nofollow noopener" target="_blank">carullahmusa.github.io/Web-site-caro/#Contact</a>
+            </li>
         </ul>
     </div>
 </body>
