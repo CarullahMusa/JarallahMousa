@@ -31,12 +31,12 @@ const liElements = document.querySelectorAll('.m-li');
 
 liElements.forEach((li) => {
     li.addEventListener('click', (event) => {
-        // Diğer tüm <li> elemanlarının arka plan rengini sıfırla
+        // Reset background color of all other <li> elements
         liElements.forEach((otherLi) => {
             otherLi.classList.remove("bg-green-100");
         });
 
-        // Tıklanan elemanın arka plan rengini değiştir
+        // Change the background color of the clicked element
         event.currentTarget.classList.toggle("bg-green-100");
     });
 });
@@ -45,37 +45,19 @@ const navliElements = document.querySelectorAll('.nav-li');
 
 navliElements.forEach((li) => {
     li.addEventListener('click', (event) => {
-        // Diğer tüm <li> elemanlarının arka plan rengini sıfırla
+        // Reset text color of all other <li> elements
         navliElements.forEach((otherLi) => {
             otherLi.classList.replace("text-green-500", "text-green-900");
         });
 
-        // Tıklanan elemanın arka plan rengini değiştir
+        // Change the text color of the clicked element
         event.currentTarget.classList.replace("text-green-900", "text-green-500");
     });
 });
 
-// const navLinks = document.querySelectorAll('.nav-li');
 
-// navLinks.forEach((link) => {
-//   const sectionId = link.getAttribute('href').replace('#', '');
-//   const section = document.getElementById(sectionId);
+function openURL() {
+    var url = "src/pdf/Vinod Jangid Resume.pdf";
 
-//   window.addEventListener('scroll', () => {
-//     if (isElementInViewport(section)) {
-//       link.classList.replace("text-green-900", "text-green-500");
-//     } else {
-//       link.classList.replace("text-green-500", "text-green-900");
-//     }
-//   });
-// });
-
-// function isElementInViewport(el) {
-//   const rect = el.getBoundingClientRect();
-//   return (
-//     rect.top >= 0 &&
-//     rect.left >= 0 &&
-//     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//   );
-// }
+    window.open(url, "_blank");
+  }
