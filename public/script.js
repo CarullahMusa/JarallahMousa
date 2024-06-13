@@ -57,7 +57,7 @@ navliElements.forEach((li) => {
 
 
 function openURL() {
-    var url = "src/pdf/Vinod Jangid Resume.pdf";
+    var url = "./JarallahMousa (3).pdf";
 
     window.open(url, "_blank");
   }
