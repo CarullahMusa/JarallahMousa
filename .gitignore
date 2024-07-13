@@ -1,2 +1,3 @@
 node_modules/
-NOT.txt
+src/
+.vscode/

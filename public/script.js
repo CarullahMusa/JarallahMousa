@@ -1,5 +1,5 @@
 
-const sideBar = document.querySelector('#sideNav');
+const sideBar = document.querySelector("#sideNav");
 
 function hiddenBar() {
     if (window.innerWidth > 768) {
@@ -60,4 +60,4 @@ function openURL() {
     var url = "./JarallahMousa (3).pdf";
 
     window.open(url, "_blank");
-  }
+}
