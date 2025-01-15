@@ -1,5 +1,5 @@
-# web_sayfam
+# Web_Sayfam
 
 
-Kendime Özel Yaptığım ilk web sitesi
+Kendime Özel Yaptığım ilk Protfolio sayfası
 
